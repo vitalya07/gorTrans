@@ -1,0 +1,15 @@
+.container {
+    max-width: 1370px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+.body-container {
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+}
+.last-nav {
+    &::after {
+        display: none;
+    }
+}
