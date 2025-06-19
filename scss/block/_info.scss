@@ -1,0 +1,100 @@
+.info {
+    &-title {
+        font-family: 'Helvetica-Bold', sans-serif;
+        font-weight: 700;
+        font-size: 19px;
+        line-height: 150%;
+        color: $mainColor;
+        text-align: center;
+        max-width: 910px;
+        margin: 0 auto;
+        margin-bottom: 10px;
+    }
+    &-top {
+        margin-bottom: 22px;
+    }
+    &-list {
+        list-style: disc;
+    }
+    &-item {     
+        margin-bottom: 22px;   
+        &__title {
+            font-family: 'Helvetica-Bold', sans-serif;
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 150%;
+            color: $mainColor;
+            text-align: left;
+            max-width: 243px;
+        }
+    }
+    &-cities {
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        gap: 5px;
+        &__city {
+            font-family: 'Helvetica-light';
+            font-weight: 300;
+            font-size: 14px;
+            line-height: 120%;
+            letter-spacing: normal;
+            color: $darkColor;
+            text-decoration: underline;
+        }
+    }
+    &-text {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 150%;
+        color: $darkColor;
+        margin-bottom: 22px;
+    }
+    &-link {
+        font-family: 'Helvetica-medium', sans-serif;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 150%;
+        color: $mainColor;
+        text-decoration: underline;
+        &__title {
+            font-size: 20px;
+            margin-bottom: 22px;
+        }
+    }
+    &-information {
+        margin-bottom: 22px;
+        &__list {
+            margin-top: 22px;
+            list-style: disc;
+        }
+        &__item {
+            margin-bottom: 22px;
+            font-size: 16px;
+        }
+        &__info {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 150%;
+            color: $darkColor;
+        }
+        &__city {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 150%;
+            color: $darkColor;
+            text-decoration: underline;
+        }
+        &__link {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 150%;
+            color: $darkColor;
+            text-decoration: underline;
+        }
+    }
+}

@@ -1,16 +1,19 @@
 .advantages {
     background-color: $whiteColor2;
-    padding: 16px 0 70px 0;
+    padding: 16px 105px 70px 105px;
     &-wrapper {
         display: flex;
         align-items: start;
-        justify-content: space-between;
+        justify-content: center;
     }
     &-item {
-        max-width: 300px;
+        max-width: 400px;
+        width: 400px;
+        height: 170px;
+        position: relative;
         &__icon {
-            width: 47px;
-            height: auto;
+            width: 46px;
+            height: 46px;
             margin: 0 auto;
             img {
                 width: 100%;
@@ -22,9 +25,9 @@
             font-family: 'Helvetica-Bold', sans-serif;
             font-size: 18px;
             line-height: 130%;
-            color: $blackColor;
+            color: $darkColor;
             text-align: center;
-            max-width: 80%;
+            max-width: 196px;
             margin: 0 auto;
             margin-bottom: 30px;
         }
@@ -34,7 +37,12 @@
             line-height: 150%;
             color: $darkColor; 
             text-align: center;
+            width: 185px;
             margin: 0 auto;
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
         }
     }
 }
