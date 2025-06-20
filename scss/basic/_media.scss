@@ -62,10 +62,164 @@
             max-width: 480px;
         }
     }
+    .hamburger {
+        display: block;
+    }
     .main {
         height: 300px;
         &-nav {
             display: none;
+        }
+    }
+}
+@media (max-width:768px) {
+    .header {
+        &-logo {
+            width: 100px;
+        }
+        &-right {
+            &__name {
+                font-size: 18px;
+                max-width: 260px;
+                display: block;
+                margin: 0 auto 10px auto;
+            }
+        }
+    }
+    .hamburger {
+        &-nav {
+            &__item {
+                width: 100%;
+            }
+            &__link {
+                font-size: 16px;
+            }
+            &__sublink {
+                font-size: 12px;
+            }
+        }
+    }
+    .main {
+        height: 200px;
+        &-title {
+            font-size: 20px;
+        }
+    }
+}
+@media (max-width: 556px) {
+    .header {
+        &-logo {
+            width: 80px;
+        }
+        &-right {
+            &__box {
+                margin-left: 0;
+                justify-content: center;
+            }
+        }
+        &-nav {
+            margin-left: 0;
+        }
+        &-list {
+            gap: 10px;
+        }
+        &-link {
+            font-size: 14px;
+        }
+    }
+}
+@media (max-width: 450px) {
+    .header {
+        &-title {
+            font-size: 20px;
+        }
+        &-right {
+            &__box {
+                gap: 5px;
+            }
+            &__phone {
+                font-size: 20px;
+            }
+            &__btn {
+                margin-left: 0;
+                width: 110px;
+                font-size: 12px;
+                padding: 0 5px;
+            }
+            &__icon {
+                margin-left: 0;
+            }
+        }
+    }
+    .hamburger {
+        &-nav {
+            &__item {
+                &::after {
+                    top: 10px;
+                    width: 20px;
+                    height: 2px;
+                }
+                &::before {
+                    top: 10px;
+                    width: 20px;
+                    height: 2px;
+                }
+            }
+            &__link {
+                font-size: 12px;
+            }
+            &__sublink {
+                font-size: 10px;
+            }
+        }
+    }
+    .main {
+        &-title {
+            width: 100%;
+        }
+    }
+}
+@media (max-width:380px) {
+    .header {
+        &-left {
+            gap: 20px;
+        }
+        &-logo {
+            width: 60px;
+        }
+        &-title {
+            font-size: 16px;
+        }
+        &-right {
+            &__name {
+                font-size: 14px;
+            }
+            &__box {
+                flex-direction: column;
+                position: relative;
+            }
+            &__phone {
+                width: 50%;
+                font-size: 16px;
+            }
+            &__btn {
+                width: 50%;
+            }
+            &__icon {
+                position: absolute;
+                top: 27px;
+                right: 30px;
+                width: 45px;
+                height: 45px;
+            }
+        }
+        &-list {
+            flex-wrap: wrap;
+        }
+    }
+    .hamburger {
+        &-nav {
+            padding: 100px 20px 20px 20px;
         }
     }
 }
