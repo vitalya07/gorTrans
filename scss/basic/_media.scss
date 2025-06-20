@@ -1,3 +1,15 @@
+@media (max-width: 1600px) {
+    .header {
+        &-nav {
+            &__link {
+                font-size: 12px;
+            }
+            &__sublist {
+                top: 45px;
+            }
+        }
+    }
+}
 @media(max-width: 1200px) {
     .header {
         &-left {
@@ -26,8 +38,6 @@
                 margin-left: 10px;
             }
         }
-    }
-    .main {
         &-nav {
             &__item {
                 padding: 10px 15px;
@@ -39,6 +49,8 @@
                 width: 160%;
             }
         }
+    }
+    .main {        
         &-title {
             font-size: 33px;
         }
@@ -77,15 +89,15 @@
         &-right {
             max-width: 480px;
         }
+        &-nav {
+            display: none;
+        }
     }
     .hamburger {
         display: block;
     }
     .main {
         height: 300px;
-        &-nav {
-            display: none;
-        }
     }
     .advantages {
         &-wrapper {
@@ -173,7 +185,7 @@
                 justify-content: center;
             }
         }
-        &-nav {
+        &-navs {
             margin-left: 0;
         }
         &-list {
