@@ -1,13 +1,14 @@
 .footer {
-    padding: 25px 0;
+    padding: 25px 10px;
     background-color: $mainColor;
     &-wrapper {
         display: flex;
         align-items: start;
         justify-content: space-between;
+        flex-wrap: wrap;
     }
     &-left, &-center, &-right {
-        width: 30%;
+        width: 300px;
         &__title {
             font-family: 'Helvetica-Bold';
             font-weight: 700;
@@ -128,6 +129,7 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
+        flex-wrap: wrap;
     }
     &-warning {
         font-family: 'Helvetica-light', sans-serif;
