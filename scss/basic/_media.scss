@@ -1,11 +1,17 @@
 @media (max-width: 1600px) {
     .header {
         &-nav {
+            &__list {
+                padding: 0 10px;
+            }
             &__link {
                 font-size: 12px;
             }
             &__sublist {
                 top: 45px;
+            }
+            &__item {
+                padding: 15px 10px;
             }
         }
     }
@@ -40,10 +46,10 @@
         }
         &-nav {
             &__item {
-                padding: 10px 15px;
+                padding: 10px 10px;
             }
             &__link {
-                font-size: 12px;
+                font-size: 10px;
             }
             &__sublist {
                 width: 160%;
@@ -91,6 +97,9 @@
         }
         &-nav {
             display: none;
+        }
+        &-container {
+            margin-bottom: 0;
         }
     }
     .hamburger {
@@ -268,6 +277,11 @@
             &__descr {
                 font-size: 18px;
             }
+        }
+    }
+    .galerey  {
+        &-buget {
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
         }
     }
 }

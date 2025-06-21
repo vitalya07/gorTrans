@@ -8,6 +8,29 @@
 </head>
 <body>
     <div class="body-container">
+        <div class="modal hide">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-head">
+                        <h2 class="modal-title">Оставьте заявку и мы свяжемся с вами</h2>
+                        <div class="modal-close"></div>
+                    </div>
+                    <form class="modal-form" id="form">
+                        <label class="modal-label">
+                            <input type="text" class="modal-input" name="modal-name" autocomplete="name" id="name" placeholder="Ваше имя" required>
+                        </label>
+                        <label class="modal-label">
+                            <input type="tel" class="modal-input" name="modal-tel" autocomplete="tel" id="tel" placeholder="Ваш телефон" required>
+                        </label>
+                        <button class="modal-btn btn">Отправить</button>
+                        <div class="modal-footer">
+                            <input type="checkbox" id="checkbox" name="checkbox" class="modal-check" required>
+                            <span class="modal-warning">Нажимая кнопку отправить вы соглашаетесь с <a href="#">Политикой конфиденциальности</a></span>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
         <header class="header">
             <div class="container header-container">
                 <div class="header-wrapper">
@@ -25,8 +48,8 @@
                                 <li class="hamburger-nav__item"><div class="hamburger-nav__link">Размещение рекламы</div>
                                     <ul class="hamburger-nav__sublist">
                                         <li class="hamburger-nav__subitem"><a href="branding.html" target="_blank" class="hamburger-nav__sublink">Брэндирование транспорта</a></li>
-                                        <li class="hamburger-nav__subitem"><a href="#" class="hamburger-nav__sublink">Реклама на мониторах</a></li>
-                                        <li class="hamburger-nav__subitem"><a href="#" class="hamburger-nav__sublink">Реклама на стикерах</a></li>
+                                        <li class="hamburger-nav__subitem"><a href="monitors.html" target="_blank" class="hamburger-nav__sublink">Реклама на мониторах</a></li>
+                                        <li class="hamburger-nav__subitem"><a href="sticers.html" target="_blank" class="hamburger-nav__sublink">Реклама на стикерах</a></li>
                                         <li class="hamburger-nav__subitem"><a href="#" class="hamburger-nav__sublink">Реклама на чехлах</a></li>
                                         <li class="hamburger-nav__subitem"><a href="#" class="hamburger-nav__sublink">Реклама на промобоксах</a></li>
                                         <li class="hamburger-nav__subitem"><a href="#" class="hamburger-nav__sublink">Реклама на проездных билетах</a></li>
@@ -36,7 +59,7 @@
                                     <ul class="hamburger-nav__sublist">
                                         <li class="hamburger-nav__subitem"><a href="#" class="hamburger-nav__sublink">Краснодар</a></li>
                                         <li class="hamburger-nav__subitem"><a href="#" class="hamburger-nav__sublink">Республика Адыгея</a></li>
-                                        <li class="hamburgernav__subitem"><a href="#"  class="hamburger-nav__sublink">Новороссийск</a></li>
+                                        <li class="hamburgernav__subitem"><a  href="#"  class="hamburger-nav__sublink">Новороссийск</a></li>
                                         <li class="hamburger-nav__subitem"><a href="#" class="hamburger-nav__sublink">Сочи</a></li>
                                         <li class="hamburger-nav__subitem"><a href="#" class="hamburger-nav__sublink">Армовир</a></li>
                                         <li class="hamburger-nav__subitem"><a href="#" class="hamburger-nav__sublink">РА Адыгея и Майкоп</a></li>
@@ -119,7 +142,7 @@
                         <div class="header-right__name">Южный Федеральный округ и Ставропольский край</div>
                         <div class="header-right__box">
                             <a href="tel:79996338880" class="header-right__phone">+7-999-633-88-80</a>
-                            <button class="header-right__btn">Заказать звонок</button>
+                            <button data-modal class="header-right__btn">Заказать звонок</button>
                             <div class="header-right__icon">
                                 <img src="icon/phone.svg" alt="телефон">
                             </div>
@@ -141,8 +164,8 @@
                         <li class="header-nav__item"><div class="header-nav__link">Размещение рекламы</div>
                             <ul class="header-nav__sublist">
                                 <li class="header-nav__subitem"><a href="branding.html" target="_blank" class="header-nav__sublink">Брэндирование транспорта</a></li>
-                                <li class="header-nav__subitem"><a href="#" class="header-nav__sublink">Реклама на мониторах</a></li>
-                                <li class="header-nav__subitem"><a href="#" class="header-nav__sublink">Реклама на стикерах</a></li>
+                                <li class="header-nav__subitem"><a href="monitors.html" target="_blank" class="header-nav__sublink">Реклама на мониторах</a></li>
+                                <li class="header-nav__subitem"><a href="sticers.html"  target="_blank"  class="header-nav__sublink">Реклама на стикерах</a></li>
                                 <li class="header-nav__subitem"><a href="#" class="header-nav__sublink">Реклама на чехлах</a></li>
                                 <li class="header-nav__subitem"><a href="#" class="header-nav__sublink">Реклама на промобоксах</a></li>
                                 <li class="header-nav__subitem"><a href="#" class="header-nav__sublink">Реклама на проездных билетах</a></li>
@@ -233,102 +256,8 @@
                     
         </header>
         <main class="content">
-            <section class="main">
-                    <!-- <nav class="main-nav">
-                        <ul class="main-nav__list">
-                            <li class="main-nav__item"><div class="main-nav__link">Размещение рекламы</div>
-                                <ul class="main-nav__sublist">
-                                    <li class="main-nav__subitem"><a href="branding.html" target="_blank" class="main-nav__sublink">Брэндирование транспорта</a></li>
-                                    <li class="main-nav__subitem"><a href="#" class="main-nav__sublink">Реклама на мониторах</a></li>
-                                    <li class="main-nav__subitem"><a href="#" class="main-nav__sublink">Реклама на стикерах</a></li>
-                                    <li class="main-nav__subitem"><a href="#" class="main-nav__sublink">Реклама на чехлах</a></li>
-                                    <li class="main-nav__subitem"><a href="#" class="main-nav__sublink">Реклама на промобоксах</a></li>
-                                    <li class="main-nav__subitem"><a href="#" class="main-nav__sublink">Реклама на проездных билетах</a></li>
-                                </ul>
-                            </li>
-                            <li class="main-nav__item"><div class="main-nav__link">Маршруты транспорта</div>
-                                <ul class="main-nav__sublist">
-                                    <li class="main-nav__subitem"><a href="#" class="main-nav__sublink">Краснодар</a></li>
-                                    <li class="main-nav__subitem"><a href="#" class="main-nav__sublink">Республика Адыгея</a></li>
-                                    <li class="main-nav__subitem"><a href="#" class="main-nav__sublink">Новороссийск</a></li>
-                                    <li class="main-nav__subitem"><a href="#" class="main-nav__sublink">Сочи</a></li>
-                                    <li class="main-nav__subitem"><a href="#" class="main-nav__sublink">Армовир</a></li>
-                                    <li class="main-nav__subitem"><a href="#" class="main-nav__sublink">РА Адыгея и Майкоп</a></li>
-                                    <li class="main-nav__subitem"><a href="#" class="main-nav__sublink">Ростов-на-Дону</a></li>
-                                    <li class="main-nav__subitem"><a href="#" class="main-nav__sublink">Ставрополь</a></li>
-                                    <li class="main-nav__subitem"><a href="#" class="main-nav__sublink">Волгоград</a></li>
-                                    <li class="main-nav__subitem"><a href="#" class="main-nav__sublink">Астрахань</a></li>
-                                </ul>
-                            </li>
-                            <li class="main-nav__item"><div class="main-nav__link">Транспорт</div>
-                                <ul class="main-nav__sublist  main-nav__small">
-                                    <li class="main-nav__subitem"><a href="#" class="main-nav__sublink">Травмваи</a></li>
-                                    <li class="main-nav__subitem"><a href="#" class="main-nav__sublink">Автобусы</a></li>
-                                    <li class="main-nav__subitem"><a href="#" class="main-nav__sublink">Троллейбусы</a></li>
-                                    <li class="main-nav__subitem"><a href="#" class="main-nav__sublink">Маршрутные такси</a></li>
-                                    <li class="main-nav__subitem"><a href="#" class="main-nav__sublink">Метротрам</a></li>
-                                    <li class="main-nav__subitem"><a href="#" class="main-nav__sublink">Электропоезд "Ласточка"</a></li>
-                                </ul>
-                            </li>
-                            <li class="main-nav__item"><div class="main-nav__link">Прайс</div>
-                                <ul class="main-nav__sublist  main-nav__big">
-                                    <li class="main-nav__subitem"><a href="#" class="main-nav__sublink">Брэндирование общественного транспорта</a></li>
-                                    <li class="main-nav__subitem"><a href="#" class="main-nav__sublink">Реклама на чехлах</a></li>
-                                    <li class="main-nav__subitem"><a href="#" class="main-nav__sublink">Реклама на стикерах</a></li>
-                                    <li class="main-nav__subitem"><a href="#" class="main-nav__sublink">Реклама на задних стеклах автобусов</a></li>
-                                    <li class="main-nav__subitem"><a href="#" class="main-nav__sublink">Реклама в "Ласточках"</a></li>
-                                    <li class="main-nav__subitem"><a href="#" class="main-nav__sublink">Реклама на "мониторах"</a></li>
-                                    <li class="main-nav__subitem"><a href="#" class="main-nav__sublink">Брэндирование корпоративного транспорта</a></li>
-                                    <li class="main-nav__subitem"><a href="#" class="main-nav__sublink">Реклама на вокзалах</a></li>
-                                </ul>
-                            </li>
-                            <li class="main-nav__item"><div class="main-nav__link">Наружная реклама</div>
-                                <ul class="main-nav__sublist">
-                                    <li class="main-nav__subitem"><a href="#" class="main-nav__sublink">Билборды 3,0 Х 6,0</a></li>
-                                    <li class="main-nav__subitem"><a href="#" class="main-nav__sublink">Ситборды 2,70 Х 3,70</a></li>
-                                    <li class="main-nav__subitem"><a href="#" class="main-nav__sublink">Пилоны 1,20 Х 1,80</a></li>
-                                    <li class="main-nav__subitem"><a href="#" class="main-nav__sublink">Пилларсы 1,40 Х 3,0</a></li>
-                                    <li class="main-nav__subitem"><a href="#" class="main-nav__sublink">Светодиодные экраны</a></li>
-                                    <li class="main-nav__subitem"><a href="#" class="main-nav__sublink">Суперсайты</a></li>
-                                    <li class="main-nav__subitem"><a href="#" class="main-nav__sublink">Брандмауэры</a></li>
-                                </ul>
-                            </li>
-                            <li class="main-nav__item"><a href="#" class="main-nav__link">WEB-студия</a></li>
-                            <li class="main-nav__item"><div class="main-nav__link">Госучреждения</div>
-                                <ul class="main-nav__sublist main-nav__small">
-                                    <li class="main-nav__subitem"><a href="#" class="main-nav__sublink">ФГУП "ПОЧТА РОССИИ" г.Краснодар</a></li>
-                                    <li class="main-nav__subitem"><a href="#" class="main-nav__sublink">ФГУП "ПОЧТА РОССИИ" КК</a></li>
-                                </ul>
-                            </li>
-                            <li class="main-nav__item"><div class="main-nav__link">Типография</div>
-                                <ul class="main-nav__sublist">
-                                    <li class="main-nav__subitem"><a href="#" class="main-nav__sublink">ПРАЙС</a></li>
-                                    <li class="main-nav__subitem"><a href="#" class="main-nav__sublink">УСЛУГИ ДИЗАЙНЕРА</a></li>
-                                    <li class="main-nav__subitem"><a href="#" class="main-nav__sublink">ВИЗИТКИ</a></li>
-                                    <li class="main-nav__subitem"><a href="#" class="main-nav__sublink">ЛИСТОВКИ </a></li>
-                                    <li class="main-nav__subitem"><a href="#" class="main-nav__sublink">БУКЛЕТЫ</a></li>
-                                    <li class="main-nav__subitem"><a href="#" class="main-nav__sublink">НАКЛЕЙКИ</a></li>
-                                    <li class="main-nav__subitem"><a href="#" class="main-nav__sublink">ОТКРЫТКИ</a></li>
-                                     <li class="main-nav__subitem"><a href="#" class="main-nav__sublink">БЛОКНОТЫ</a></li>
-
-                                    <li class="main-nav__subitem"><a href="#" class="main-nav__sublink">ПЛАКАТЫ</a></li>
-                                    <li class="main-nav__subitem"><a href="#" class="main-nav__sublink">ГРАМОТЫ</a></li>
-                                    <li class="main-nav__subitem"><a href="#" class="main-nav__sublink">БРОШЮРЫ</a></li>
-                                    <li class="main-nav__subitem"><a href="#" class="main-nav__sublink">ПАКЕТЫ</a></li>
-                                    <li class="main-nav__subitem"><a href="#" class="main-nav__sublink">ПАПКИ</a></li>
-                                    <li class="main-nav__subitem"><a href="#" class="main-nav__sublink">КАРТЫ</a></li>
-                                    <li class="main-nav__subitem"><a href="#" class="main-nav__sublink">КАЛЕНДАРИ</a></li>
-                                    <li class="main-nav__subitem"><a href="#" class="main-nav__sublink">ЖУРНАЛЫ</a></li>
-                                    <li class="main-nav__subitem"><a href="#" class="main-nav__sublink">БЛАНКИ</a></li>
-                                    <li class="main-nav__subitem"><a href="#" class="main-nav__sublink">БЛОКИ / КУБАРИКИ</a></li>
-                                    <li class="main-nav__subitem"><a href="#" class="main-nav__sublink">БЛАНКИ</a></li>
-                                </ul>
-                            </li>
-                            <li class="main-nav__item last-nav"><div class="main-nav__link">Радио и ТВ</div></li>
-                            
-                        </ul>
-                    </nav> -->
-                    <h1 class="main-title">ИЗГОТОВЛЕНИЕ И РАЗМЕЩЕНИЕ РЕКЛАМЫ ПО ЮФО</h1>
+            <section class="main">                    
+                <h1 class="main-title">ИЗГОТОВЛЕНИЕ И РАЗМЕЩЕНИЕ РЕКЛАМЫ ПО ЮФО</h1>
             </section>
             <section class="advantages">
                 <div class="advantages-wrapper">

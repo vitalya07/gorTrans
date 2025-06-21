@@ -1,0 +1,18 @@
+.galerey {
+    padding: 50px 0;
+    &-buget {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+        gap: 20px;
+        &__img {
+            width: 100%;
+            height: auto;
+            border: 5px solid $mainColor;
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+    }
+}
