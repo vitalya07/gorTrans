@@ -186,10 +186,26 @@
         display: none;
         &-mobile {
             display: block;
+            &__routs {
+                gap: 40px;
+            }
+            &__content {
+                &--title {
+                    padding: 5px;
+                    max-width: 150px;
+                }
+                &--descr {
+                    padding: 5px;
+                    max-width: 400px;
+                }
+            }
         }
     }
 }
 @media (max-width: 556px) {
+    .container {
+        padding: 0 10px;
+    }
     .header {
         &-logo {
             width: 80px;
@@ -220,6 +236,19 @@
             }
             &__descr {
                 font-size: 18px;
+            }
+        }
+    }
+    .table {
+        &-mobile {
+            &__content {
+                &--title {
+                    font-size: 14px;
+                    text-align: left;
+                }
+                &--descr {
+                    font-size: 12px;
+                }
             }
         }
     }
