@@ -27,3 +27,22 @@
         transform: scale(1);
     }
 }
+.table-item__open {    
+    .table-mobile__content {
+        display: block;
+    }  
+    .table-mobile__head {
+        &::after {
+            transform: translateY(-50%) rotate(-45deg);
+        }
+        &::before {
+            transform: translateY(-50%) rotate(45deg);
+        }
+    } 
+    &::after {
+        transform: translateY(-50%) rotate(-45deg);
+    }
+    &::before {
+        transform: translateY(-50%) rotate(45deg);
+    } 
+}

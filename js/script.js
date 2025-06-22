@@ -52,4 +52,17 @@ document.addEventListener('DOMContentLoaded', ()=> {
         }
     })
     // Модальное окно
+    //Таблицы 
+    const mobileTable = document.querySelector('.table-mobile');
+    if(mobileTable) {
+        const tableItem = document.querySelectorAll('.table-mobile__item');
+        tableItem.forEach(item => {
+            item.addEventListener('click' ,(e) => {
+                item.classList.toggle('table-item__open')
+            });
+        })
+    }
+     
+    
+    //Таблицы
 })

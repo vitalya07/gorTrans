@@ -182,6 +182,12 @@
             }
         }
     }
+    .table {
+        display: none;
+        &-mobile {
+            display: block;
+        }
+    }
 }
 @media (max-width: 556px) {
     .header {
