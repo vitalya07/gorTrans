@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Реклама на чехлах</title>
+    <link rel="stylesheet" href="css/baguetteBox.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+    <div class="body-container">
+         <div class="modal hide">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-head">
+                        <h2 class="modal-title">Оставьте заявку и мы свяжемся с вами</h2>
+                        <div class="modal-close"></div>
+                    </div>
+                    <form class="modal-form" id="form">
+                        <label class="modal-label">
+                            <input type="text" class="modal-input" name="modal-name" autocomplete="name" id="name" placeholder="Ваше имя" required>
+                        </label>
+                        <label class="modal-label">
+                            <input type="tel" class="modal-input" name="modal-tel" autocomplete="tel" id="tel" placeholder="Ваш телефон" required>
+                        </label>
+                        <button class="modal-btn btn">Отправить</button>
+                        <div class="modal-footer">
+                            <input type="checkbox" id="checkbox" name="checkbox" class="modal-check" required>
+                            <span class="modal-warning">Нажимая кнопку отправить вы соглашаетесь с <a href="#">Политикой конфиденциальности</a></span>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <header class="header">
+            <div class="container header-container">
+                <div class="header-wrapper">
+                    <div class="header-left">
+                        <a href="index.html" class="header-logo"> <img src="icon/logo.svg" alt="логотип сайта"></a>
+                        <div class="header-text">
+                            <h2 class="header-title">РПК «ГорТранс»</h2>
+                            <h3 class="header-subtitle">Компания  основана  в 2000 году</h3>
+                        </div>
+                        <div class="hamburger">
+                            <span></span><span></span><span></span>
+                        </div>
+                        <nav class="hamburger-nav">
+                            <ul class="hamburger-nav__list">
+                                <li class="hamburger-nav__item"><div class="hamburger-nav__link">Размещение рекламы</div>
+                                    <ul class="hamburger-nav__sublist">
+                                        <li class="hamburger-nav__subitem"><a href="branding.html" target="_blank" class="hamburger-nav__sublink">Брэндирование транспорта</a></li>
+                                        <li class="hamburger-nav__subitem"><a href="monitors.html" target="_blank" class="hamburger-nav__sublink">Реклама на мониторах</a></li>
+                                        <li class="hamburger-nav__subitem"><a href="sticers.html" target="_blank" class="hamburger-nav__sublink">Реклама на стикерах</a></li>
+                                        <li class="hamburger-nav__subitem"><a href="#" class="hamburger-nav__sublink">Реклама на чехлах</a></li>
+                                        <li class="hamburger-nav__subitem"><a href="#" class="hamburger-nav__sublink">Реклама на промобоксах</a></li>
+                                        <li class="hamburger-nav__subitem"><a href="#" class="hamburger-nav__sublink">Реклама на проездных билетах</a></li>
+                                    </ul>
+                                </li>
+                                <li class="hamburger-nav__item"><div class="hamburger-nav__link">Маршруты транспорта</div>
+                                    <ul class="hamburger-nav__sublist">
+                                        <li class="hamburger-nav__subitem"><a href="#" class="hamburger-nav__sublink">Краснодар</a></li>
+                                        <li class="hamburger-nav__subitem"><a href="#" class="hamburger-nav__sublink">Республика Адыгея</a></li>
+                                        <li class="hamburgernav__subitem"><a  href="#"  class="hamburger-nav__sublink">Новороссийск</a></li>
+                                        <li class="hamburger-nav__subitem"><a href="#" class="hamburger-nav__sublink">Сочи</a></li>
+                                        <li class="hamburger-nav__subitem"><a href="#" class="hamburger-nav__sublink">Армовир</a></li>
+                                        <li class="hamburger-nav__subitem"><a href="#" class="hamburger-nav__sublink">РА Адыгея и Майкоп</a></li>
+                                        <li class="hamburger-nav__subitem"><a href="#" class="hamburger-nav__sublink">Ростов-на-Дону</a></li>
+                                        <li class="hamburger-nav__subitem"><a href="#" class="hamburger-nav__sublink">Ставрополь</a></li>
+                                        <li class="hamburger-nav__subitem"><a href="#" class="hamburger-nav__sublink">Волгоград</a></li>
+                                        <li class="hamburger-nav__subitem"><a href="#" class="hamburger-nav__sublink">Астрахань</a></li>
+                                    </ul>
+                                </li>
+                                <li class="hamburger-nav__item"><div class="hamburger-nav__link">Транспорт</div>
+                                    <ul class="hamburger-nav__sublist  hamburger-nav__small">
+                                        <li class="hamburger-nav__subitem"><a href="#" class="hamburger-nav__sublink">Травмваи</a></li>
+                                        <li class="hamburger-nav__subitem"><a href="#" class="hamburger-nav__sublink">Автобусы</a></li>
+                                        <li class="hamburger-nav__subitem"><a href="#" class="hamburger-nav__sublink">Троллейбусы</a></li>
+                                        <li class="hamburger-nav__subitem"><a href="#" class="hamburger-nav__sublink">Маршрутные такси</a></li>
+                                        <li class="hamburger-nav__subitem"><a href="#" class="hamburger-nav__sublink">Метротрам</a></li>
+                                        <li class="hamburger-nav__subitem"><a href="#" class="hamburger-nav__sublink">Электропоезд "Ласточка"</a></li>
+                                    </ul>
+                                </li>
+                                <li class="hamburger-nav__item"><div class="hamburger-nav__link">Прайс</div>
+                                    <ul class="hamburger-nav__sublist  hamburger-nav__big">
+                                        <li class="hamburger-nav__subitem"><a href="#" class="hamburger-nav__sublink">Брэндирование общественного транспорта</a></li>
+                                        <li class="hamburger-nav__subitem"><a href="#" class="hamburger-nav__sublink">Реклама на чехлах</a></li>
+                                        <li class="hamburger-nav__subitem"><a href="#" class="hamburger-nav__sublink">Реклама на стикерах</a></li>
+                                        <li class="hamburger-nav__subitem"><a href="#" class="hamburger-nav__sublink">Реклама на задних стеклах автобусов</a></li>
+                                        <li class="hamburger-nav__subitem"><a href="#" class="hamburger-nav__sublink">Реклама в "Ласточках"</a></li>
+                                        <li class="hamburger-nav__subitem"><a href="#" class="hamburger-nav__sublink">Реклама на "мониторах"</a></li>
+                                        <li class="hamburger-nav__subitem"><a href="#" class="hamburger-nav__sublink">Брэндирование корпоративного транспорта</a></li>
+                                        <li class="hamburger-nav__subitem"><a href="#" class="hamburger-nav__sublink">Реклама на вокзалах</a></li>
+                                    </ul>
+                                </li>
+                                <li class="hamburger-nav__item"><div class="hamburger-nav__link">Наружная реклама</div>
+                                    <ul class="hamburger-nav__sublist">
+                                        <li class="hamburger-nav__subitem"><a href="#" class="hamburger-nav__sublink">Билборды 3,0 Х 6,0</a></li>
+                                        <li class="hamburger-nav__subitem"><a href="#" class="hamburger-nav__sublink">Ситборды 2,70 Х 3,70</a></li>
+                                        <li class="hamburger-nav__subitem"><a href="#" class="hamburger-nav__sublink">Пилоны 1,20 Х 1,80</a></li>
+                                        <li class="hamburger-nav__subitem"><a href="#" class="hamburger-nav__sublink">Пилларсы 1,40 Х 3,0</a></li>
+                                        <li class="hamburger-nav__subitem"><a href="#" class="hamburger-nav__sublink">Светодиодные экраны</a></li>
+                                        <li class="hamburger-nav__subitem"><a href="#" class="hamburger-nav__sublink">Суперсайты</a></li>
+                                        <li class="hamburger-nav__subitem"><a href="#" class="hamburgernav__sublink">Брандмауэры</a></li>
+                                    </ul>
+                                </li>
+                                <li class="hamburger-nav__item last-nav"><a href="#" class="hamburger-nav__link">WEB-студия</a></li>
+                                <li class="hamburger-nav__item"><div class="hamburger-nav__link">Госучреждения</div>
+                                    <ul class="hamburger-nav__sublist hamburger-nav__small">
+                                        <li class="hamburger-nav__subitem"><a href="#" class="hamburger-nav__sublink">ФГУП "ПОЧТА РОССИИ" г.Краснодар</a></li>
+                                        <li class="hamburger-nav__subitem"><a href="#" class="hamburger-nav__sublink">ФГУП "ПОЧТА РОССИИ" КК</a></li>
+                                    </ul>
+                                </li>
+                                <li class="hamburger-nav__item"><div class="hamburger-nav__link">Типография</div>
+                                    <ul class="hamburger-nav__sublist">
+                                        <li class="hamburger-nav__subitem"><a href="#" class="hamburger-nav__sublink">ПРАЙС</a></li>
+                                        <li class="hamburger-nav__subitem"><a href="#" class="hamburger-nav__sublink">УСЛУГИ ДИЗАЙНЕРА</a></li>
+                                        <li class="hamburger-nav__subitem"><a href="#" class="hamburger-nav__sublink">ВИЗИТКИ</a></li>
+                                        <li class="hamburger-nav__subitem"><a href="#" class="hamburger-nav__sublink">ЛИСТОВКИ </a></li>
+                                        <li class="hamburger-nav__subitem"><a href="#" class="hamburger-nav__sublink">БУКЛЕТЫ</a></li>
+                                        <li class="hamburger-nav__subitem"><a href="#" class="hamburger-nav__sublink">НАКЛЕЙКИ</a></li>
+                                        <li class="hamburger-nav__subitem"><a href="#" class="hamburger-nav__sublink">ОТКРЫТКИ</a></li>
+                                        <li class="hamburger-nav__subitem"><a href="#" class="hamburger-nav__sublink">БЛОКНОТЫ</a></li>
+
+                                        <li class="hamburger-nav__subitem"><a href="#" class="hamburger-nav__sublink">ПЛАКАТЫ</a></li>
+                                        <li class="hamburger-nav__subitem"><a href="#" class="hamburger-nav__sublink">ГРАМОТЫ</a></li>
+                                        <li class="hamburger-nav__subitem"><a href="#" class="hamburger-nav__sublink">БРОШЮРЫ</a></li>
+                                        <li class="hamburger-nav__subitem"><a href="#" class="hamburger-nav__sublink">ПАКЕТЫ</a></li>
+                                        <li class="hamburger-nav__subitem"><a href="#" class="hamburger-nav__sublink">ПАПКИ</a></li>
+                                        <li class="hamburger-nav__subitem"><a href="#" class="hamburger-nav__sublink">КАРТЫ</a></li>
+                                        <li class="hamburger-nav__subitem"><a href="#" class="hamburger-nav__sublink">КАЛЕНДАРИ</a></li>
+                                        <li class="hamburger-nav__subitem"><a href="#" class="hamburger-nav__sublink">ЖУРНАЛЫ</a></li>
+                                        <li class="hamburger-nav__subitem"><a href="#" class="hamburger-nav__sublink">БЛАНКИ</a></li>
+                                        <li class="hamburger-nav__subitem"><a href="#" class="hamburger-nav__sublink">БЛОКИ / КУБАРИКИ</a></li>
+                                        <li class="hamburger-nav__subitem"><a href="#" class="hamburger-nav__sublink">БЛАНКИ</a></li>
+                                    </ul>
+                                </li>
+                                <li class="hamburger-nav__item last-nav"><a href="#" class="hamburger-nav__link">Радио и ТВ</a></li>                                
+                            </ul>
+                        </nav>
+                    </div>
+                    
+                    <div class="header-right">
+                        <div class="header-right__name">Южный Федеральный округ и Ставропольский край</div>
+                        <div class="header-right__box">
+                            <a href="tel:79996338880" class="header-right__phone">+7-999-633-88-80</a>
+                            <button data-modal class="header-right__btn">Заказать звонок</button>
+                            <div class="header-right__icon">
+                                <img src="icon/phone.svg" alt="телефон">
+                            </div>
+                        </div>
+                        <nav class="header-navs">
+                            <ul class="header-list">
+                                <li class="header-item"><a href="#" class="header-link">Контакты</a></li>
+                                <li class="header-item"><a href="#" class="header-link">Маршруты on-line</a></li>
+                                <li class="header-item"><a href="#" class="header-link">Новости</a></li>
+                                <li class="header-item"><a href="#" class="header-link">Франшиза</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>  
+            <div class="header-head">
+                <nav class="header-nav">
+                    <ul class="header-nav__list">
+                        <li class="header-nav__item"><div class="header-nav__link">Размещение рекламы</div>
+                            <ul class="header-nav__sublist">
+                                <li class="header-nav__subitem"><a href="branding.html" target="_blank" class="header-nav__sublink">Брэндирование транспорта</a></li>
+                                <li class="header-nav__subitem"><a href="monitors.html" target="_blank" class="header-nav__sublink">Реклама на мониторах</a></li>
+                                <li class="header-nav__subitem"><a href="sticers.html"  target="_blank"  class="header-nav__sublink">Реклама на стикерах</a></li>
+                                <li class="header-nav__subitem"><a href="#" class="header-nav__sublink">Реклама на чехлах</a></li>
+                                <li class="header-nav__subitem"><a href="#" class="header-nav__sublink">Реклама на промобоксах</a></li>
+                                <li class="header-nav__subitem"><a href="#" class="header-nav__sublink">Реклама на проездных билетах</a></li>
+                            </ul>
+                        </li>
+                        <li class="header-nav__item"><div class="header-nav__link">Маршруты транспорта</div>
+                            <ul class="header-nav__sublist">
+                                <li class="header-nav__subitem"><a href="routes.html" class="header-nav__sublink">Краснодар</a></li>
+                                <li class="header-nav__subitem"><a href="#" class="header-nav__sublink">Республика Адыгея</a></li>
+                                <li class="header-nav__subitem"><a href="#" class="header-nav__sublink">Новороссийск</a></li>
+                                <li class="header-nav__subitem"><a href="#" class="header-nav__sublink">Сочи</a></li>
+                                <li class="header-nav__subitem"><a href="#" class="header-nav__sublink">Армовир</a></li>
+                                <li class="header-nav__subitem"><a href="#" class="header-nav__sublink">РА Адыгея и Майкоп</a></li>
+                                <li class="header-nav__subitem"><a href="#" class="header-nav__sublink">Ростов-на-Дону</a></li>
+                                <li class="header-nav__subitem"><a href="#" class="header-nav__sublink">Ставрополь</a></li>
+                                <li class="header-nav__subitem"><a href="#" class="header-nav__sublink">Волгоград</a></li>
+                                <li class="header-nav__subitem"><a href="#" class="header-nav__sublink">Астрахань</a></li>
+                            </ul>
+                        </li>
+                        <li class="header-nav__item"><div class="header-nav__link">Транспорт</div>
+                            <ul class="header-nav__sublist  header-nav__small">
+                                <li class="header-nav__subitem"><a href="#" class="header-nav__sublink">Травмваи</a></li>
+                                <li class="header-nav__subitem"><a href="#" class="header-nav__sublink">Автобусы</a></li>
+                                <li class="header-nav__subitem"><a href="#" class="header-nav__sublink">Троллейбусы</a></li>
+                                <li class="header-nav__subitem"><a href="#" class="header-nav__sublink">Маршрутные такси</a></li>
+                                <li class="header-nav__subitem"><a href="#" class="header-nav__sublink">Метротрам</a></li>
+                                <li class="header-nav__subitem"><a href="#" class="header-nav__sublink">Электропоезд "Ласточка"</a></li>
+                            </ul>
+                        </li>
+                        <li class="header-nav__item"><div class="header-nav__link">Прайс</div>
+                            <ul class="header-nav__sublist  header-nav__big">
+                                <li class="header-nav__subitem"><a href="#" class="header-nav__sublink">Брэндирование общественного транспорта</a></li>
+                                <li class="header-nav__subitem"><a href="#" class="header-nav__sublink">Реклама на чехлах</a></li>
+                                <li class="header-nav__subitem"><a href="#" class="header-nav__sublink">Реклама на стикерах</a></li>
+                                <li class="header-nav__subitem"><a href="#" class="header-nav__sublink">Реклама на задних стеклах автобусов</a></li>
+                                <li class="header-nav__subitem"><a href="#" class="header-nav__sublink">Реклама в "Ласточках"</a></li>
+                                <li class="header-nav__subitem"><a href="#" class="header-nav__sublink">Реклама на "мониторах"</a></li>
+                                <li class="header-nav__subitem"><a href="#" class="header-nav__sublink">Брэндирование корпоративного транспорта</a></li>
+                                <li class="header-nav__subitem"><a href="#" class="header-nav__sublink">Реклама на вокзалах</a></li>
+                            </ul>
+                        </li>
+                        <li class="header-nav__item"><div class="header-nav__link">Наружная реклама</div>
+                            <ul class="header-nav__sublist">
+                                <li class="header-nav__subitem"><a href="#" class="header-nav__sublink">Билборды 3,0 Х 6,0</a></li>
+                                <li class="header-nav__subitem"><a href="#" class="header-nav__sublink">Ситборды 2,70 Х 3,70</a></li>
+                                <li class="header-nav__subitem"><a href="#" class="header-nav__sublink">Пилоны 1,20 Х 1,80</a></li>
+                                <li class="header-nav__subitem"><a href="#" class="header-nav__sublink">Пилларсы 1,40 Х 3,0</a></li>
+                                <li class="header-nav__subitem"><a href="#" class="header-nav__sublink">Светодиодные экраны</a></li>
+                                <li class="header-nav__subitem"><a href="#" class="header-nav__sublink">Суперсайты</a></li>
+                                <li class="header-nav__subitem"><a href="#" class="header-nav__sublink">Брандмауэры</a></li>
+                            </ul>
+                        </li>
+                        <li class="header-nav__item"><a href="#" class="header-nav__link">WEB-студия</a></li>
+                        <li class="header-nav__item"><div class="header-nav__link">Госучреждения</div>
+                            <ul class="header-nav__sublist header-nav__small">
+                                <li class="header-nav__subitem"><a href="#" class="header-nav__sublink">ФГУП "ПОЧТА РОССИИ" г.Краснодар</a></li>
+                                <li class="header-nav__subitem"><a href="#" class="header-nav__sublink">ФГУП "ПОЧТА РОССИИ" КК</a></li>
+                            </ul>
+                        </li>
+                        <li class="header-nav__item"><div class="header-nav__link">Типография</div>
+                            <ul class="header-nav__sublist">
+                                <li class="header-nav__subitem"><a href="#" class="header-nav__sublink">ПРАЙС</a></li>
+                                <li class="header-nav__subitem"><a href="#" class="header-nav__sublink">УСЛУГИ ДИЗАЙНЕРА</a></li>
+                                <li class="header-nav__subitem"><a href="#" class="header-nav__sublink">ВИЗИТКИ</a></li>
+                                <li class="header-nav__subitem"><a href="#" class="header-nav__sublink">ЛИСТОВКИ </a></li>
+                                <li class="header-nav__subitem"><a href="#" class="header-nav__sublink">БУКЛЕТЫ</a></li>
+                                <li class="header-nav__subitem"><a href="#" class="header-nav__sublink">НАКЛЕЙКИ</a></li>
+                                <li class="header-nav__subitem"><a href="#" class="header-nav__sublink">ОТКРЫТКИ</a></li>
+                                <li class="header-nav__subitem"><a href="#" class="header-nav__sublink">БЛОКНОТЫ</a></li>
+
+                                <li class="header-nav__subitem"><a href="#" class="header-nav__sublink">ПЛАКАТЫ</a></li>
+                                <li class="header-nav__subitem"><a href="#" class="header-nav__sublink">ГРАМОТЫ</a></li>
+                                <li class="header-nav__subitem"><a href="#" class="header-nav__sublink">БРОШЮРЫ</a></li>
+                                <li class="header-nav__subitem"><a href="#" class="header-nav__sublink">ПАКЕТЫ</a></li>
+                                <li class="header-nav__subitem"><a href="#" class="header-nav__sublink">ПАПКИ</a></li>
+                                <li class="header-nav__subitem"><a href="#" class="header-nav__sublink">КАРТЫ</a></li>
+                                <li class="header-nav__subitem"><a href="#" class="header-nav__sublink">КАЛЕНДАРИ</a></li>
+                                <li class="header-nav__subitem"><a href="#" class="header-nav__sublink">ЖУРНАЛЫ</a></li>
+                                <li class="header-nav__subitem"><a href="#" class="header-nav__sublink">БЛАНКИ</a></li>
+                                <li class="header-nav__subitem"><a href="#" class="header-nav__sublink">БЛОКИ / КУБАРИКИ</a></li>
+                                <li class="header-nav__subitem"><a href="#" class="header-nav__sublink">БЛАНКИ</a></li>
+                            </ul>
+                        </li>
+                        <li class="header-nav__item last-nav"><div class="header-nav__link">Радио и ТВ</div></li>                    
+                    </ul>
+                </nav> 
+            </div>                    
+        </header>
+        <main class="content">
+            <div class="public__branding-main"></div>
+            <section class="work">
+                <div class="container">
+                    <h1 class="work-title"> РЕКЛАМА НА ЧЕХЛАХ</h1>
+                    <div class="work-content">
+                        <p class="work-content__descr">Реклама на чехлах в транспорте нацелена на товары народного потребления и услуги. Специфика размещения рекламной информации на сиденьях и подголовниках позволяет убедиться, что значительный объем целевой аудитории изучит предложение. Чем чаще реклама будет попадать в поле зрение потенциального потребителя, тем вероятнее, что он заинтересуется предложенными товарами или услугами.</p>
+                        <p class="work-content__descr"><b>Учитывая тот факт, что во время поездки пассажир минимум 5 минут может знакомиться с предложенной рекламой, можно не скупиться на описание, рекламные акции и контактные данные, которые пассажир может записать или снять на мобильный телефон.</p>
+                        <p class="work-content__descr">При оформлении можно использовать оригинальные красочные картинки привлекающие внимание, логотипы компании. При выборе рекламы для трамваев, троллейбусов, автобусов, маршрутных такси необходимо учитывать маршрут, направление следования, что позволит выбрать оптимальную целевую аудиторию, которой предоставленная информация будет полезна и интересна.</p>
+                        <div class="work-content__img">
+                            <img src="img/covers/covers.webp" alt="Чехлы1">
+                        </div>
+                        <h2 class="work-content__title">Реклама на чехлах размещается в основных видах городского транспорта:</h2>
+                        <ul class="work-content__list">
+                            <li class="work-content__item">Трамваи;</li>
+                            <li class="work-content__item">Троллейбусы;</li>
+                            <li class="work-content__item">Автобусы;</li>       
+                            <li class="work-content__item">Корпоративный транспорт;</li>
+                            <li class="work-content__item">Рабочие автобусы и маршрутки.</li>                       
+                        </ul>
+                        <h2 class="work-content__title">Преимущества выбора рекламы на сидениях:</h2>
+                        <ul class="work-content__list">
+                            <li class="work-content__item">Оптимальный охват большой территории;</li>
+                            <li class="work-content__item">Доступность потенциальным потребителям из разных частей города;</li>
+                            <li class="work-content__item">Эффективное и ненавязчивое воздействие;</li>       
+                            <li class="work-content__item">Удобное расположение на уровне глаз пассажира;</li>
+                            <li class="work-content__item">Восприятие рекламной информации в полном объеме;</li>            
+                            <li class="work-content__item">Доступность для всех ниш бизнеса.</li>               
+                        </ul>
+                        <p class="work-content__descr">Реклама на сиденьях в транспорте на сегодняшний день – это креативная, современная концепция продвижения, которая в несколько раз превышает эффективность основных средств информирования пассажиров</p>
+                        <p class="work-content__descr">Делая основную ставку на удобство восприятия, яркое оформление сидений, удается привлечь внимание максимального количества потенциальных потребителей. Реклама на сиденьях в общественном транспорте занимает особую нишу эффективного маркетинга.</p>
+                        <p class="work-content__descr">Выгодное и доступное решение позволит одним махом решить множество проблем, связанных с привлечением потребителей. Рекламные надписи на сидениях – это широкий охват, максимально возможная проходимость населения, высокая динамичность, доступная стоимость и расширенные возможности визуального оформления.</p>
+                        <h2 class="work-content__title">Реклама на чехлах в автобусах и мсаршрутных такси</h2>
+                        <div class="work-content__img">
+                            <img src="img/table/table4.webp" alt="Таблица1">
+                        </div>
+                        <div class="work-content__wrapper">
+                            <a href="https://drive.google.com/file/d/1wyIsc4BraZYbVXIV6ciWQ3jlWCeLYh28/view" target="_blank"  class="work-content-img">
+                                <img src="icon/download.svg" alt="Скачать заявку">
+                            </a>
+                            <sapn class="work-content__download">Скачать бланк-заявку на брендирование транспорта.</sapn>
+                        </div>
+                        <span class="work-content__warning">Для размещения рекламы на транспорте необходимо обратиться с письменной заявкой.</span>
+                    </div>
+                </div>
+            </section>
+            <section class="galerey">
+                <div class="container">
+                    <div class="galerey-buget">
+                        <a href="img/covers/mtaxi_02.jpg" data-caption="Брэндирование трамвая" class="galerey-buget__img">
+                            <img src="img/covers/mtaxi_02.jpg" alt="Брэндирование трамвая">
+                        </a>
+                        <a href="img/covers/mtaxi_02.jpg" data-caption="Брэндирование трамвая" class="galerey-buget__img">
+                            <img src="img/covers/mtaxi_02.jpg" alt="Брэндирование трамвая">
+                        </a>
+                        <a href="img/covers/mtaxi_02.jpg" data-caption="Брэндирование трамвая" class="galerey-buget__img">
+                            <img src="img/covers/mtaxi_02.jpg" alt="Брэндирование трамвая">
+                        </a>
+                        <a href="img/covers/mtaxi_02.jpg" data-caption="Брэндирование трамвая" class="galerey-buget__img">
+                            <img src="img/covers/mtaxi_02.jpg" alt="Брэндирование трамвая">
+                        </a>
+                        <a href="img/covers/mtaxi_02.jpg" data-caption="Брэндирование трамвая" class="galerey-buget__img">
+                            <img src="img/covers/mtaxi_02.jpg" alt="Брэндирование трамвая">
+                        </a>
+                        <a href="img/covers/mtaxi_02.jpg" data-caption="Брэндирование трамвая" class="galerey-buget__img">
+                            <img src="img/covers/mtaxi_02.jpg" alt="Брэндирование трамвая">
+                        </a>
+
+                        <a href="img/covers/mtaxi_02.jpg" data-caption="Брэндирование троллейбуса" class="galerey-buget__img">
+                            <img src="img/covers/mtaxi_02.jpg" alt="Брэндирование троллейбуса">
+                        </a>
+                        <a href="img/covers/mtaxi_02.jpg" data-caption="Брэндирование троллейбуса" class="galerey-buget__img">
+                            <img src="img/covers/mtaxi_02.jpg" alt="Брэндирование троллейбуса">
+                        </a>
+                        <a href="img/covers/mtaxi_02.jpg" data-caption="Брэндирование троллейбуса" class="galerey-buget__img">
+                            <img src="img/covers/mtaxi_02.jpg" alt="Брэндирование троллейбуса">
+                        </a>
+                         <a href="img/covers/mtaxi_02.jpg" data-caption="Брэндирование трамвая" class="galerey-buget__img">
+                            <img src="img/covers/mtaxi_02.jpg" alt="Брэндирование трамвая">
+                        </a>
+                        <a href="img/covers/mtaxi_02.jpg" data-caption="Брэндирование трамвая" class="galerey-buget__img">
+                            <img src="img/covers/mtaxi_02.jpg" alt="Брэндирование трамвая">
+                        </a>
+                        <a href="img/covers/mtaxi_02.jpg" data-caption="Брэндирование трамвая" class="galerey-buget__img">
+                            <img src="img/covers/mtaxi_02.jpg" alt="Брэндирование трамвая">
+                        </a>
+
+                        <a href="img/covers/mtaxi_02.jpg" data-caption="Брэндирование троллейбуса" class="galerey-buget__img">
+                            <img src="img/covers/mtaxi_02.jpg" alt="Брэндирование троллейбуса">
+                        </a>
+                        <a href="img/covers/mtaxi_02.jpg" data-caption="Брэндирование троллейбуса" class="galerey-buget__img">
+                            <img src="img/covers/mtaxi_02.jpg" alt="Брэндирование троллейбуса">
+                        </a>
+                        <a href="img/covers/mtaxi_02.jpg" data-caption="Брэндирование троллейбуса" class="galerey-buget__img">
+                            <img src="img/covers/mtaxi_02.jpg" alt="Брэндирование троллейбуса">
+                        </a>
+                        
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+            <div class="container">
+                <div class="footer-wrapper">
+                    <div class="footer-left">
+                        <h3 class="footer-left__title">Каталог:</h3>
+                        <ul class="footer-left__list footer-list">
+                            <li class="footer-list__item"><a href="#" class="footer-list__link">Широкоформатная и интерьерная печать</a></li>
+                            <li class="footer-list__item"><a href="#" class="footer-list__link">Размещение рекламы</a></li>
+                            <li class="footer-list__item"><a href="#" class="footer-list__link">Маршруты транспорта</a></li>
+                            <li class="footer-list__item"><a href="#" class="footer-list__link">Транспорт</a></li>
+                            <li class="footer-list__item"><a href="#" class="footer-list__link">Брендирование общественного транспорта</a></li>
+                            <li class="footer-list__item"><a href="#" class="footer-list__link">Брендирование корпоративного транспорта</a></li>
+                            <li class="footer-list__item"><a href="#" class="footer-list__link">Реклама на стикерах</a></li>
+                            <li class="footer-list__item"><a href="#" class="footer-list__link">Реклама на мониторах</a></li>
+                            <li class="footer-list__item"><a href="#" class="footer-list__link">Реклама на чехлах</a></li>
+                            <li class="footer-list__item"><a href="#" class="footer-list__link">Реклама на вокзалах</a></li>
+                            <li class="footer-list__item"><a href="#" class="footer-list__link">Реклама в Ласточке</a></li>
+                            <li class="footer-list__item"><a href="#" class="footer-list__link">Реклама на задних стеклах автобусов</a></li>
+                            <li class="footer-list__item"><a href="#" class="footer-list__link">Наружная реклама</a></li>
+                            <li class="footer-list__item"><a href="#" class="footer-list__link">Реклама в госучреждениях</a></li>
+                            <li class="footer-list__item"><a href="#" class="footer-list__link">Типография</a></li>
+                            <li class="footer-list__item"><a href="#" class="footer-list__link">Реклама на радио и ТВ</a></li>
+                            <li class="footer-list__item"><a href="#" class="footer-list__link">Адресная и Безадресная рассылка по почтовым ящикам</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-center">
+                        <div class="footer-center__box">
+                            <h3 class="footer-center__title">ПОКУПАТЕЛЮ:</h3>
+                            <ul class="footer-left__list footer-list">
+                                <li class="footer-list__item"><a href="#" class="footer-list__link">Маршруты транспорта on-line</a></li>
+                                <li class="footer-list__item"><a href="#" class="footer-list__link">Новости</a></li>
+                                <li class="footer-list__item"><a href="#" class="footer-list__link">Контакты</a></li>      
+                            </ul>
+                        </div>
+                        <div class="footer-center__box">
+                            <h3 class="footer-center__title">ТРАНЗИТНАЯ РЕКЛАМА:</h3>
+                            <ul class="footer-left__list footer-list">
+                                <li class="footer-list__item"><a href="#" class="footer-list__link">Широкоформатная и интерьерная печать</a></li>
+                                <li class="footer-list__item"><a href="#" class="footer-list__link">Брендирование общественного транспорта</a></li>
+                                <li class="footer-list__item"><a href="#" class="footer-list__link">Брендирование корпоративного транспорта</a></li> 
+                                <li class="footer-list__item"><a href="#" class="footer-list__link">Реклама на стикерах</a></li>
+                                <li class="footer-list__item"><a href="#" class="footer-list__link">Реклама на мониторах</a></li>
+                                <li class="footer-list__item"><a href="#" class="footer-list__link">Реклама на чехлах</a></li>  
+                                <li class="footer-list__item"><a href="#" class="footer-list__link">Реклама на вокзалах</a></li>
+                                <li class="footer-list__item"><a href="#" class="footer-list__link">Реклама в Ласточке</a></li>
+                                <li class="footer-list__item"><a href="#" class="footer-list__link">Реклама на задних стеклах автобусов</a></li>
+                            </ul>
+                        </div>                        
+                    </div>
+                    <div class="footer-right">
+                        <h3 class="footer-right__title">КОНТАКТЫ:</h3>
+                        <div class="footer-right__box">
+                            <div class="footer-right__adress footer-adress">
+                                <h4 class="footer-adress__title">Адресс: <span>350002, Краснодарский край, г.Краснодар, ул. Садовая, 112, оф. 433</span></h4>
+                            </div>
+                            <div class="footer-right__director footer-director">
+                                <h4 class="footer-director__title">Руководитель: <br> Мельникова Ирина Николаевна ИНН 231101037691</h4>
+                            </div>
+                            <a href="gortrans-ltd@yandex.ru" target="_blank" class="footer-right__email footer-email">gortrans-ltd@yandex.ru</a>
+                            <a href="tel:79183378880" class="footer-tel">тел.:  +7-918-337-88-80</a>
+                            <a href="tel:79996378880" class="footer-tel">тел.:  +7-999-637-88-80</a>
+                            <a href="https://wa.me/79183378880" class="footer-whatsap">WhatsApp: +7-918-337-88-80</a>
+                            <div class="footer-sales">
+                                <h3 class="footer-sales__title">Отдел продаж:</h3>
+                                <a href="tel:79996338880" class="footer-sales__link">тел.:+7-999-633-88-80</a>    
+                                <a href="tel:79996358880" class="footer-sales__link">тел.:+7-999-635-88-80</a>   
+                                <a href="tel:79996378880" class="footer-sales__link">тел.:+7-999-637-88-80</a>   
+                            </div>
+                            <div class="footer-syte">Сайт: gortrans.info</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-box">
+                    <div class="footer-warning">
+                        <span>Вся информация на сайте www.gortrans.info предоставлена в ознакомительных и познавательных целях. </span>
+                        <span>При использовании материалов сайта ссылка на сайт обязательна.</span>                               
+                    </div>
+                    <div class="footer-copy">
+                        © Copyright 2000-2025 РПК ГорТранс
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="js/baguetteBox.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
